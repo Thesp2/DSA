@@ -30,9 +30,12 @@ def nqueen(n):
     backtrack(0)
     return ans
 
-n=4
-solutions = nqueen(4)
-for sol in solutions:
-    for row in sol:
-        print(row)
-    print()
+n=2
+solutions = nqueen(n)
+if len(solutions)<1:
+    print("Not possible!")
+else:
+    for sol in solutions:
+        for row in sol:
+            print(row)
+        print()
